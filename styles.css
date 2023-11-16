@@ -1,71 +1,174 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-    --primary-color: #1a202c;
-    --secondary-color: #32A5EC;
-    --tertiary-color: #F7FAFC;
-    --accent-color: #464646;
-    --secondary-accent-color: #1E4052;
-    --cadium-red: #EA001E;
-    --red-wine: #A80010;
-    --wine-berry: #591729;
-    --dark-tan: #630D10;
-    --lightning-yellow: #FFC331;
-    --peach-yellow: #fadea5;
-    --primary-font-size: 16px;
-  }
+  --primary-color: #1a202c;
+  --secondary-color: #32a5ec;
+  --tertiary-color: #f7fafc;
+  --accent-color: #464646;
+  --secondary-accent-color: #1e4052;
+  --cadium-red: #ea001e;
+  --red-wine: #a80010;
+  --wine-berry: #591729;
+  --dark-tan: #630d10;
+  --lightning-yellow: #ffc331;
+  --peach-yellow: #fadea5;
+  --primary-font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: var(--primary-font-size);
+  line-height: 1.6;
+  color: var(--tertiary-color);
+  background-color: var(--primary-color);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  background: var(--secondary-accent-color);
+  background: radial-gradient(
+   ellipse farthest-corner at center center,
+    var(--secondary-accent-color) 0%,
+    var(--secondary-color) 30%,
+    var(--accent-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#ironMan {
+  font-size: 2rem;
+  line-height: 1.2;
+  background: var(--secondary-accent-color);
+  background: radial-gradient(
+   ellipse farthest-corner at center center,
+    var(--secondary-accent-color) 0%,
+    var(--secondary-color) 30%,
+    var(--accent-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: var(--primary-font-size);
-    line-height: 1.6;
-    color: var(--tertiary-color);
-    background-color: var(--primary-color);
-    margin: 0;
-    padding: 0;
-  }
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
 
-  h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
+#headline {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  /* margin-bottom: 1rem; */
+  margin: 50px 0;
+  text-align: center;
+  color: var(--secondary-color);
+}
 
+#diveDeeper {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding: 0 50px;
+  margin: 50px 0;
+  text-align: center;
+  color: var(--tertiary-color);
+}
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px 50px 30px;
+  border: var(--accent-color) 5px double;
+}
 
+#img-caption {
+  margin: 15px 0 5px 0;
+}
+
+ul {
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+  max-width: 750px;
+}
+
+li {
+  margin: 20px 0;
+}
+
+li::marker {
+  color: var(--secondary-color);
+}
+
+strong {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+blockquote {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 50px auto;
+  max-width: 700px;
+  font-style: italic;
+  text-align: center;
+  background: var(--secondary-accent-color);
+  background: radial-gradient(
+   ellipse farthest-corner at center center,
+    var(--secondary-accent-color) 0%,
+    var(--secondary-color) 30%,
+    var(--accent-color) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  background: #EA001E;
+background: linear-gradient(to right, #EA001E 11%, #FFC331 52%, #FADEA5 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
 
 @media (max-width: 320px) {
-    body {
-      font-size: 14px;
-      line-height: 1.2;
-    }
+  body {
+    font-size: 14px;
+    line-height: 1.2;
   }
-  
-  @media (max-width: 480px) {
-    body {
-      font-size: 16px;
-      line-height: 1.3;
-    }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    line-height: 1.3;
   }
-  
-  @media (max-width: 768px) {
-    body {
-      font-size: 18px;
-      line-height: 1.4;
-    }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 18px;
+    line-height: 1.4;
   }
-  
-  @media (max-width: 1024px) {
-    body {
-      font-size: 20px;
-      line-height: 1.5;
-    }
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 20px;
+    line-height: 1.5;
   }
-  
-  @media (max-width: 1200px) {
-    body {
-      font-size: 22px;
-      line-height: 1.6;
-    }
+}
+
+@media (max-width: 1200px) {
+  body {
+    font-size: 22px;
+    line-height: 1.6;
   }
+}
