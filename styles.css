@@ -47,9 +47,9 @@ h1 {
   background: var(--secondary-accent-color);
   background: radial-gradient(
    ellipse farthest-corner at center center,
-    var(--secondary-accent-color) 0%,
-    var(--secondary-color) 30%,
-    var(--accent-color) 100%
+   var(--cadium-red) 0%,
+   var(--peach-yellow) 20%,
+   var(--cadium-red) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -214,7 +214,7 @@ background: linear-gradient(to left, #f7fafc 11%, #32a5ec 52%, #f7fafc 100%);
   background: radial-gradient(
    ellipse farthest-corner at center center,
     var(--cadium-red) 0%,
-    var(--peach-yellow) 30%,
+    var(--peach-yellow) 20%,
     var(--cadium-red) 100%
   );
   -webkit-background-clip: text;
