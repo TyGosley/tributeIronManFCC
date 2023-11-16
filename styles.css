@@ -80,13 +80,19 @@ h3 {
   color: var(--tertiary-color);
 }
 
+/* Linear gradient border */
 img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 15px 50px 30px;
   border: var(--accent-color) 5px double;
+  border-radius: 15px 50px 30px;
+  border: double 5px transparent;
+  background-image: linear-gradient(var(--accent-color), var(--accent-color)),
+    linear-gradient(var(--secondary-color), var(--cadium-red));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 #img-caption {
@@ -131,11 +137,88 @@ blockquote {
   -webkit-text-fill-color: transparent;
 }
 
-a {
+a, #tibute-link {
   background: #EA001E;
 background: linear-gradient(to right, #EA001E 11%, #FFC331 52%, #FADEA5 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  background: #FFC331;
+background: linear-gradient(to left, #32a5ec 11%, #EA001E 52%, #FADEA5 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#linkedin {
+  background: #0e76a8;
+background: linear-gradient(to right, #0e76a8 11%, #32a5ec 52%, #0e76a8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#linkedin:hover {
+  background: #32a5ec;
+background: linear-gradient(to left, #f7fafc 11%, #32a5ec 52%, #f7fafc 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#github {
+  background: #0e76a8;
+background: linear-gradient(to right, #0e76a8 11%, #32a5ec 52%, #0e76a8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#github:hover {
+  background: #32a5ec;
+background: linear-gradient(to left, #f7fafc 11%, #32a5ec 52%, #f7fafc 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#portfolio {
+  background: #0e76a8;
+background: linear-gradient(to right, #0e76a8 11%, #32a5ec 52%, #0e76a8 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#portfolio:hover {
+  background: #32a5ec;
+background: linear-gradient(to left, #f7fafc 11%, #32a5ec 52%, #f7fafc 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#creation {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  color: var(--peach-yellow);
+}
+
+#personal-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+
+#companyName {
+  
+  font-style: italic;
+  /* text-align: center; */
+  background: var(--secondary-accent-color);
+  background: radial-gradient(
+   ellipse farthest-corner at center center,
+    var(--cadium-red) 0%,
+    var(--peach-yellow) 30%,
+    var(--cadium-red) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 320px) {
