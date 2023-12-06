@@ -1,8 +1,8 @@
 # Iron Man Tribute FCC
 
-  ![License](https://img.shields.io/badge/license-No License-blue)
+![GitHub license](https://img.shields.io/badge/license-No%20License-blue.svg)
 
-  ## Description
+## Description
 
 This was my take on a Free Code Camp assignment.  I met the criteria but took it a step further with adding in custom CSS and a few other things.  I hope you enjoy it.
 ___
